@@ -33,27 +33,50 @@
         background-color: #222;
       }
 
-      #fileListContainer {
+      #tableContainer {
         max-width: 600px;
         margin: 30px auto;
         padding: 20px;
         border: 1px solid #444;
         border-radius: 8px;
-        list-style-type: none;
+        background-color: #2c2c2c;
       }
 
-      #fileListContainer li {
-        margin-bottom: 10px;
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #444;
+      }
+
+      th {
+        background-color: #333;
       }
     </style>
   </head>
   <body>
     <h1>발표 자료 리스트</h1>
-    <ul id="fileListContainer">
-      <li><a href="study00-test.html">2024-09-01: study00-test.html</a></li>
-      <li>
-        <a href="study01-20240901.html">2024-09-01: study01-20240901.html</a>
-      </li>
-    </ul>
+    <div id="tableContainer">
+      <table>
+        <thead>
+          <tr>
+            <th>날짜</th>
+            <th>파일명</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2024-09-01</td>
+            <td><a href="study00.html">study00.html</a></td>
+          </tr>
+          <!-- 필요한 경우 이곳에 추가 파일명과 날짜를 추가하세요 -->
+        </tbody>
+      </table>
+    </div>
   </body>
 </html>
